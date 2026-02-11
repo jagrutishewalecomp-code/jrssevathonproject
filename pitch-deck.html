@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-ORBIT Investor Pitch Deck</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .slide { display: none; padding: 20px; }
+        .active { display: block; }
+        .nav-button { background-color: #007bff; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="presentation">
+        <div class="slide active">
+            <h1>Welcome to V-ORBIT</h1>
+            <p>Your gateway to innovative solutions.</p>
+        </div>
+        <div class="slide">
+            <h2>Our Vision</h2>
+            <p>To revolutionize the way technology interacts with everyday life.</p>
+        </div>
+        <div class="slide">
+            <h2>Market Opportunity</h2>
+            <p>Addressing the needs of an evolving digital landscape.</p>
+        </div>
+        <div class="slide">
+            <h2>Our Solutions</h2>
+            <ul>
+                <li>Product A</li>
+                <li>Product B</li>
+                <li>Product C</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h2>Financial Projections</h2>
+            <p>Steady growth and increasing market share.</p>
+        </div>
+        <div class="slide">
+            <h2>Contact Us</h2>
+            <p>Email: contact@vorbit.com | Phone: (123) 456-7890</p>
+        </div>
+        <button class="nav-button" onclick="changeSlide(-1)">Previous</button>
+        <button class="nav-button" onclick="changeSlide(1)">Next</button>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>
