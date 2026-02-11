@@ -1,86 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V-ORBIT</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; }
-        .container { width: 90%; margin: auto; overflow: hidden; }
-        .hero { background: #e0f7fa; padding: 50px 0; text-align: center; }
-        .hero h1 { font-size: 2.5em; }
-        .section { padding: 20px; border-radius: 10px; margin: 20px 0; background: white; }
-        .card { border-radius: 10px; padding: 20px; margin: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .cta-button { background: #00796b; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        footer { text-align: center; padding: 20px 0; background: #e0f7fa; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>V-ORBIT — Volunteer Outreach Toolkit</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="V-ORBIT: an ethical volunteer enablement framework for respectful, effective outreach." />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="V-ORBIT logo" class="logo" />
+        <span class="brand-name">V-ORBIT</span>
+      </a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Ethics & Data</a>
+        <a href="contact.html">Contact</a>
+        <button class="btn btn-ghost" id="pilotBtn">Be Part of the Pilot</button>
+      </nav>
+    </div>
+  </header>
 
+  <main>
     <section class="hero">
-        <h1>Turning Volunteer Outreach from Confusion into Confidence</h1>
-        <button class="cta-button">Experience V-ORBIT in 60 Seconds</button>
-        <button class="cta-button">Be Part of the Pilot</button>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Turning Volunteer Outreach from Confusion into Confidence</h1>
+          <p class="lead">V-ORBIT provides structured guidance, ethical communication, and follow-up support so volunteers can engage with clarity and care — across education, health, and community programs.</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" id="demoBtn">Experience V-ORBIT in 60 Seconds</button>
+            <button class="btn btn-secondary" id="pilotBtn2">Be Part of the Pilot</button>
+          </div>
+        </div>
+        <div class="hero-visual card soft-glow">
+          <div class="mock">
+            <h3>Outreach Readiness Check — Preview</h3>
+            <ol class="mini-check">
+              <li>Do you have consent to contact?</li>
+              <li>Can you describe the program in one sentence?</li>
+              <li>Is there a clear next step for the person?</li>
+            </ol>
+            <p class="muted">This is a preview only — not a live AI system.</p>
+            <button class="btn btn-ghost" id="openDemo">Open Preview</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="container">
-        <section class="section">
-            <h2>Problem Statement</h2>
-            <p>Volunteer outreach can often feel chaotic, leading to missed opportunities and frustrated volunteers.</p>
-        </section>
+    <section class="container section">
+      <div class="section-grid">
+        <div class="card">
+          <h2>Problem Statement</h2>
+          <p>Volunteers frequently face confusion, lack clear scripts, fear sounding pushy, and struggle with inconsistent messaging or ethical concerns. Many strong programs underperform not for lack of impact, but for lack of outreach structure.</p>
+        </div>
 
-        <section class="section">
-            <h2>Before/After Comparison</h2>
-            <div class="card">Before: Confusion in connections.</div>
-            <div class="card">After: Streamlined outreach and engagement.</div>
-        </section>
+        <div class="card">
+          <h2>Before vs After</h2>
+          <div class="before-after">
+            <div class="before">
+              <h3>Without structure</h3>
+              <ul>
+                <li>Variable messages</li>
+                <li>Low trust</li>
+                <li>Inconsistent follow-up</li>
+              </ul>
+            </div>
+            <div class="after">
+              <h3>With V-ORBIT</h3>
+              <ul>
+                <li>Clear, empathetic scripts</li>
+                <li>Consistent, respectful follow-up</li>
+                <li>Higher enrollment and trust</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-        <section class="section">
-            <h2>What is V-ORBIT</h2>
-            <p>V-ORBIT is an innovative solution designed to transform volunteer outreach into a confident, seamless experience.</p>
-        </section>
+        <div class="card">
+          <h2>What is V-ORBIT?</h2>
+          <p>V-ORBIT is a cause-agnostic outreach framework that combines empathy, structured conversation flows, ethical decision-making, and continuous learning systems to enable volunteers to do their best work, respectfully.</p>
+        </div>
 
-        <section class="section">
-            <h2>6-Step Flow</h2>
-            <ol>
-                <li>Identify</li>
-                <li>Connect</li>
-                <li>Explain</li>
-                <li>Convince</li>
-                <li>Enroll</li>
-                <li>Follow-Up</li>
-            </ol>
-        </section>
+        <div class="card">
+          <h2>How It Works — 6-Step Flow</h2>
+          <ol class="flow">
+            <li><strong>Identify</strong> — Understand who to reach and why.</li>
+            <li><strong>Connect</strong> — Start with consent and context.</li>
+            <li><strong>Explain</strong> — Share the program clearly and briefly.</li>
+            <li><strong>Convince (Ethically)</strong> — Address needs, never pressure.</li>
+            <li><strong>Enroll</strong> — Make next steps simple and optional.</li>
+            <li><strong>Follow-Up</strong> — Respectful, consent-based check-ins.</li>
+          </ol>
+          <p class="muted">Each step is respectful, consent-based, and repeatable.</p>
+        </div>
 
-        <section class="section">
-            <h2>Interactive Demo</h2>
-            <p>Experience how V-ORBIT works through our interactive demo.</p>
-        </section>
+        <div class="card">
+          <h2>Interactive Demo (Preview only)</h2>
+          <p>Try the Outreach Readiness Check — sample questions and quick insights. This preview is non-AI and exists to show flow, not real-time decisioning.</p>
+          <button class="btn" id="startReadiness">Start Preview</button>
+        </div>
 
-        <section class="section">
-            <h2>Core Features</h2>
-            <ul>
-                <li>User-friendly interface</li>
-                <li>Real-time communication</li>
-                <li>Customizable outreach strategies</li>
-            </ul>
-        </section>
+        <div class="card">
+          <h2>Core Features</h2>
+          <ul>
+            <li><strong>Volunteer Enablement</strong> — handbooks, role-play training, audio tone guidance</li>
+            <li><strong>Intelligent Outreach</strong> — dynamic scripts, emotional awareness cues, ethical decision trees</li>
+            <li><strong>Tracking & Learning</strong> — outreach insights, drop-off understanding</li>
+            <li><strong>Follow-Up & Safeguards</strong> — consent-based communication, privacy-first</li>
+          </ul>
+        </div>
 
-        <section class="section">
-            <h2>Ethics Manifesto</h2>
-            <p>Our commitment to ethical volunteer outreach practices ensures that every volunteer is valued and respected.</p>
-        </section>
+        <div class="card">
+          <h2>Outreach Ethics Manifesto</h2>
+          <p>We will prioritize consent, honesty, minimal data collection, and no pressure tactics.</p>
+          <ul>
+            <li>Will do: get consent, explain clearly, protect privacy.</li>
+            <li>Will not do: employ manipulative scripts, harvest unnecessary data, or sell lists.</li>
+          </ul>
+        </div>
 
-        <section class="section">
-            <h2>Pilot Information</h2>
-            <p>Join our pilot program and contribute to the shaping of V-ORBIT.</p>
-        </section>
+        <div class="card">
+          <h2>Who It's For / Who It's Not For</h2>
+          <p>For NGOs, volunteers, and social initiatives. Not for aggressive sales, manipulation, or data harvesting.</p>
+        </div>
+
+        <div class="card">
+          <h2>Learning & Growth Roadmap</h2>
+          <ol>
+            <li>Now — Prototype & framework</li>
+            <li>Pilot — Real-world testing with partners</li>
+            <li>Future — Continuous ethical improvement and wider availability</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h2>Partner & Pilot Information</h2>
+          <p>Free pilot participation. Typical implementation timeline: onboarding → training → 6–8 week pilot. Full support during pilot. No long-term commitment required.</p>
+        </div>
+
+        <div class="card">
+          <h2>Social Proof</h2>
+          <p>Coming soon — testimonials will be added after pilots to ensure authenticity.</p>
+        </div>
+
+        <div class="card">
+          <h2>Join a Pilot</h2>
+          <p>Interested in participating? Sign up below and our team will follow up with next steps. No obligations.</p>
+          <button class="btn btn-primary" id="signupBtn">Sign up for Pilot</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>V-ORBIT</strong> — Volunteer Outreach & Relationship-Building Intelligent Toolkit
+        <div class="muted">© 2026 V-ORBIT</div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Ethics & Data</a>
+        <a href="contact.html">Contact</a>
+        <div class="social muted">Twitter • LinkedIn • GitHub (placeholder)</div>
+      </div>
     </div>
+  </footer>
 
-    <footer>
-        <p>Contact us: info@vorbit.com</p>
-        <p>&copy; 2026 V-ORBIT. All Rights Reserved.</p>
-    </footer>
+  <!-- Signup Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel card">
+      <button class="modal-close" id="closeModal">×</button>
+      <h3>Join the V-ORBIT Pilot</h3>
+      <form id="signupForm">
+        <label for="org">Organization / Your name</label>
+        <input id="org" name="org" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="role">Role</label>
+        <input id="role" name="role" placeholder="Volunteer / Program Manager / Other" />
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes"></textarea>
+        <div class="modal-actions">
+          <button class="btn btn-primary" type="submit">Request Pilot</button>
+          <button class="btn btn-ghost" type="button" id="cancelModal">Cancel</button>
+        </div>
+        <p class="muted small">We will only keep the information necessary to run the pilot. See our <a href="privacy.html">privacy & ethics</a> page.</p>
+      </form>
+      <div id="signupSuccess" class="hidden">
+        <h4>Thanks — we received your request</h4>
+        <p>We'll reach out with next steps. This demo stores signups locally; configure a backend to collect real submissions.</p>
+      </div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
